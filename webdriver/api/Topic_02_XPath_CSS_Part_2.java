@@ -31,7 +31,7 @@ public class Topic_02_XPath_CSS_Part_2 {
 		driver.findElement(By.name("login[password]")).sendKeys("");
 		
 		//Click button Login
-		driver.findElement(By.xpath("//button[@id='send2']")).click();
+		driver.findElement(By.xpath("//button[@title='Login']")).click();
 		
 		//Expected text trả về = requirement
 		Assert.assertEquals(driver.findElement(By.id("advice-required-entry-email")).getText(), "This is a required field.");
